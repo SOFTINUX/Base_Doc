@@ -1,6 +1,6 @@
 {
-    "python.pythonPath": "C:\\Program Files (x86)\\Python36-32\\python.exe",
+    "python.pythonPath": "C:\\Program Files\\Python36\\python.exe",
     "restructuredtext.confPath": "${workspaceRoot}\\source",
-    "restructuredtext.sphinxBuildPath": "\"C:\\Program Files (x86)\\Python36-32\\python.exe\" -m sphinx",
+    "restructuredtext.sphinxBuildPath": "\"C:\\Program Files\\Python36\\python.exe\" -m sphinx",
     "restructuredtext.builtDocumentationPath": "${workspaceRoot}/build/html"
 }
