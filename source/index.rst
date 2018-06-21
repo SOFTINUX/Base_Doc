@@ -17,5 +17,7 @@ Base manages the common stuff so that the developer can focus on its extension a
 
 Browse the documentation
 ************************
-
-:doc:`Write extensions </write_extensions>`
+| :doc:`Installation </installation>`
+| :doc:`Implement your own extension </implement_your_extension>`
+| :doc:`Write extensions </write_extensions>`
+| :doc:`How to </howto/index>`
