@@ -24,15 +24,15 @@
 .. toctree::
    :hidden:
    :maxdepth: 2
-   :caption: Miscs
+   :caption: Misc
 
    about_ef
    internals
-   unit_testing
+   testunit/unit_testing
 
 .. toctree::
    :hidden:
    :maxdepth: 2
-   :caption: How To's
+   :caption: How To
 
    howto/index
