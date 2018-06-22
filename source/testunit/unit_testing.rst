@@ -25,3 +25,8 @@ When you want to create a migration, be sure that your test project adds referen
 
 If you just want to use ExtCore's *repositories* pattern to query DB, reference your extension's repositories project
 ``YourExtension.Data.EntityFramework``.
+
+Running tests
+=============
+* Perform any necessary migration (at least from `Testing/Unit/CommonTest`, with ``dotnet ef database update``).
+* If testing with VS Code IDE, we use `dotnet-test-explorer <https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer>`_ extension with some configuration in `.vscode/settings.json` (workspace configuration file).
