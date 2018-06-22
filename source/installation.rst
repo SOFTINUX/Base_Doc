@@ -50,7 +50,7 @@ Add the first user (demo user)
 ==============================
 
 | With Postman (or the program of your choice) make a POST request to this url: http://localhost:5000/dev/seed/CreateUser
-| (with curl: ``curl -i -X POST http://localhost:5000/dev/seed/CreateUser``)
+| (with curl: ``curl -i -X POST -H 'Content-Type: application/json' http://localhost:5000/dev/seed/CreateUser -d {}``)
 | This will create the demo user with general permissions.
 
 Login with demo user
