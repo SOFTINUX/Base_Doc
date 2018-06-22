@@ -31,7 +31,7 @@ Go to the root folder and run ``bp.bat`` under Windows or ``bp.sh`` under Linux/
 
 .. note::
 
-   You must have `.NET Core SDK <https://www.microsoft.com/net/download/windows>`_ to compile and build the application.
+   You must have `.NET Core SDK <https://www.microsoft.com/net/download/>`_ to compile and build the application.
 
 Run the app
 ===========
