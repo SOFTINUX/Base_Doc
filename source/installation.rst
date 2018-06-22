@@ -4,7 +4,11 @@ Installation
 Restore npm packages
 ====================
 
-Go to Barebone folder and run ``npm ci --save-dev`` command so that dependencies packages are installed and settings updated.
+After, go to Barebone folder and run ``npm ci --save-dev`` command so that dependencies packages are installed and settings updated.
+
+.. note::
+
+   You must have `Nodejs <https://nodejs.org/en/download/package-manager/>`_ to restore web dependencies.
 
 Restore nuget packages
 ======================
@@ -25,6 +29,10 @@ Build the appplication
 
 Go to the root folder and run ``bp.bat`` under Windows or ``bp.sh`` under Linux/Macos. (use -h for help).
 
+.. note::
+
+   You must have `.NET Core SDK <https://www.microsoft.com/net/download/windows>`_ to compile and build the application.
+
 Run the app
 ===========
 
@@ -34,14 +42,14 @@ Run the app
 After that, the application is available on http://localhost:5000/
 
 Note about Visual Studio 2017
-------------------------------------
+-----------------------------
 
 | If you launched application from Visual Studio, this port will change, being randomly defined, and value is stored in *WebApplication/Properties/launchSettings.json*
 | You can edit this value in Visual Studio: WebApplication's properties > Debug tab > Web Server Settings/App URL or directly in launchSettings file.
 | After, the default port used by :guilabel:`dotnet run` is the port defined in *WebApplication/Properties/launchSettings.json*.
 
 Note about Rider 2017.3
-------------------------------
+-----------------------
 
 | Rider 2017.3 cannot execute the PostBuildEvent declared into WebApplication.csproj
 | You need to execute ``./bp.sh copyexts`` and ``./bp.sh copydeps`` after build the solution or project.
