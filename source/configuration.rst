@@ -26,7 +26,7 @@ Extensions
 | But you can change this if you need. If you make that, you must change the variables into the build script:
 
 - *bp.bat* for windows
-- *bp.sh* for *nix system.
+- *bp.sh* for \*nix system.
 
 You have four variables :
 
