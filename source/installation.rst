@@ -8,7 +8,7 @@ After, go to Barebone folder and run ``npm ci --save-dev`` command so that depen
 
 .. note::
 
-   You must have `Nodejs <https://nodejs.org/en/download/package-manager/>`_ to restore web dependencies.
+   You must have |nodejs_link| to restore web dependencies.
 
 Restore nuget packages
 ======================
@@ -31,7 +31,7 @@ Go to the root folder and run ``bp.bat`` under Windows or ``bp.sh`` under Linux/
 
 .. note::
 
-   You must have `.NET Core SDK <https://www.microsoft.com/net/download/>`_ to compile and build the application.
+   You must have |netsdk_link| to compile and build the application.
 
 Configure the application
 =========================
@@ -39,7 +39,7 @@ Configure the application
 | The application have some values to configure in ``appsettings.json`` file.
 | Theses values are stored into sections:
 | - Extensions : this is the path to find Extensions. **Important :** see :ref:`extensions folder <extension_folder>`.
-| - ConnectionString : the connection configuration to database. See `connections strings <https://www.connectionstrings.com/>`_ to help you for configure.
+| - ConnectionString : the connection configuration to database. See |connectionstring_link| to help you for configure.
 | - Corporate : the name and logo for the application
 | - RestSeed : identification used to create admin user.
 
@@ -90,3 +90,16 @@ Login with demo user
 | user: johndoe@softinux.com
 | password: 123_Password
 | (password is case sensitive)
+
+
+.. |connectionstring_link| raw:: html
+
+   <a href="https://www.connectionstrings.com/" target="_blank">connections strings</a>
+
+.. |netsdk_link| raw:: html
+
+   <a href="https://www.microsoft.com/net/download/" target="_blank">.NET Core SDK</a>
+
+.. |nodejs_link| raw:: html
+
+   <a href="https://nodejs.org/en/download/package-manager/" target="_blank">Nodejs</a>
