@@ -6,6 +6,7 @@
    :caption: Installation
 
    installation
+   configuration
 
 .. toctree::
    :hidden:

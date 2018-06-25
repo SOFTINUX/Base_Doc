@@ -24,7 +24,7 @@ Update database with migration
 | The Entity Framework database context is defined in web application's *Startup.cs*.
 | We use Sqlite but you can change this easily.
 
-Build the appplication
+Build the application
 ======================
 
 Go to the root folder and run ``bp.bat`` under Windows or ``bp.sh`` under Linux/Macos. (use -h for help).
@@ -33,8 +33,24 @@ Go to the root folder and run ``bp.bat`` under Windows or ``bp.sh`` under Linux/
 
    You must have `.NET Core SDK <https://www.microsoft.com/net/download/>`_ to compile and build the application.
 
+Configure the application
+=========================
+
+| The application have some values to configure in ``appsettings.json`` file.
+| Theses values are stored into sections:
+| - Extensions : this is the path to find Extensions. **Important :** see :ref:`extensions folder <extension_folder>`.
+| - ConnectionString : the connection configuration to database. See `connections strings <https://www.connectionstrings.com/>`_ to help you for configure.
+| - Corporate : the name and logo for the application
+| - RestSeed : identification used to create admin user.
+
+See :doc:`configuration section </configuration>` for a full explanation.
+
 Run the app
 ===========
+
+.. warning::
+
+   Remove the ``SeedDatabase.dll`` to avoid any attempts to create a new administrator. See :ref:`config_seed` configuration section.
 
 | Go to WebApplication folder and type ``dotnet run``.
 | (If you want, you can also execute from root solution folder with this command ``dotnet run --project WebApplication\WebApplication.csproj``)
@@ -54,12 +70,19 @@ Note about Rider 2017.3
 | Rider 2017.3 cannot execute the PostBuildEvent declared into WebApplication.csproj
 | You need to execute ``./bp.sh copyexts`` and ``./bp.sh copydeps`` after build the solution or project.
 
-Add the first user (demo user)
-==============================
+Add the administrator user
+==========================
 
 | With Postman (or the program of your choice) make a POST request to this url: http://localhost:5000/dev/seed/CreateUser
-| (with curl: ``curl -i -X POST -H 'Content-Type: application/json' http://localhost:5000/dev/seed/CreateUser -d {}``)
-| This will create the demo user with general permissions.
+| By command line:
+- curl: ``curl -i -X POST -H 'Content-Type: application/json' http://localhost:5000/dev/seed/CreateUser -d {}``
+- powershell: ``Invoke-WebRequest -Uri http://localhost:5000/dev/seed/CreateUser -Method POST``
+
+This will create the administrator user with general permissions.
+
+.. note::
+
+   Actually, we creating demo user. The first user is johndoe.
 
 Login with demo user
 ====================

@@ -1,6 +1,6 @@
 Implement your extension
 ****************************
-
+.. _extension_folder:
 .. warning::
 
    You cannot place your Extensions folder to another drive. See `#2981 <https://github.com/dotnet/core-setup/issues/2981#issuecomment-322572374>`_
