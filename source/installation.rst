@@ -4,24 +4,24 @@ Installation
 Restore npm packages
 ====================
 
-After, go to Barebone folder and run ``npm ci --save-dev`` command so that dependencies packages are installed and settings updated.
+After cloning *Base* repository, go to Barebone folder and run ``npm ci --save-dev`` command so that dependencies packages are installed and settings updated.
 
 .. note::
 
    You must have |nodejs_link| to restore web dependencies.
 
-Restore nuget packages
+Restore nuGet packages
 ======================
 
-Restore the nuGet packages is now an implicit command executed at application build.
+Restoring the nuGet packages is now an implicit command executed at application build so you don't need to do it manually.
 
 Update database with migration
 ==============================
 
 | Go to WebApplication folder and run ``dotnet ef database update``.
 | This will create the database.
-| See *appsettings.json* for database path.
-| The Entity Framework database context is defined in web application's *Startup.cs*.
+| See *appsettings.json* ("ConnectionStrings:Default" section) for database path.
+| The Entity Framework database context is defined in web application's *Startup.cs* (line with ``services_.AddDbContext<...``).
 | We use Sqlite but you can change this easily.
 
 Build the application
@@ -39,7 +39,8 @@ Configure the application
 | The application have some values to configure in ``appsettings.json`` file.
 | Theses values are stored into sections:
 | - Extensions : this is the path to find Extensions. **Important :** see :ref:`extensions folder <extension_folder>`.
-| - ConnectionString : the connection configuration to database. See |connectionstring_link| to help you for configure.
+| If you wish to change this path, read :ref:`what changes to make <configure_extension_folder>`.
+| - ConnectionStrings : the connection configuration to database. See |connectionstring_link| to help you configure.
 | - Corporate : the name and logo for the application
 | - RestSeed : identification used to create admin user.
 
@@ -50,10 +51,10 @@ Run the app
 
 .. warning::
 
-   Remove the ``SeedDatabase.dll`` to avoid any attempts to create a new administrator. See :ref:`config_seed` configuration section.
+   Remove the ``SeedDatabase.dll`` to avoid any attempt to create a new administrator. See :ref:`config_seed` configuration section.
 
 | Go to WebApplication folder and type ``dotnet run``.
-| (If you want, you can also execute from root solution folder with this command ``dotnet run --project WebApplication\WebApplication.csproj``)
+| (If you want, you can also execute from root solution folder with this command ``dotnet run --project WebApplication\WebApplication.csproj``).
 
 After that, the application is available on http://localhost:5000/
 
@@ -62,7 +63,7 @@ Note about Visual Studio 2017
 
 | If you launched application from Visual Studio, this port will change, being randomly defined, and value is stored in *WebApplication/Properties/launchSettings.json*
 | You can edit this value in Visual Studio: WebApplication's properties > Debug tab > Web Server Settings/App URL or directly in launchSettings file.
-| After, the default port used by :guilabel:`dotnet run` is the port defined in *WebApplication/Properties/launchSettings.json*.
+| After, the default port used by `dotnet run` is the port defined in *WebApplication/Properties/launchSettings.json*.
 
 Note about Rider 2017.3
 -----------------------

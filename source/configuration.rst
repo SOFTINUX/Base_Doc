@@ -1,20 +1,30 @@
 Configuration
 *************
 
-| The configuration is made into ``appsettings.json`` file.
-| You have many sections, but, only these sections must be need configuration.
+| The configuration is stored into ``appsettings.json`` file.
+| Only the following sections are read by *Base*:
+
 - Extensions
 - ConnectionStrings
 - Corporate
 - RestSeed
+- SignIn
+- LockoutUser
+- ValidateUser
+- PasswordStrategy
+- ConfigureApplicationCookie
+- Logging
+- Serilog
 
-You can adapt others sections, but we not support it.
+You can add others sections, but it's up to you to read them.
 
 Extensions
 ----------
+.. _configure_extension_folder:
 
-| By default, extensions ares stored into ``WebApplication\Extensions`` folder.
-| But you can change this if you need. If you make that, you must change the variables into the build script :
+| By default, extensions ares stored into ``WebApplication/Extensions`` folder.
+| But you can change this if you need. If you make that, you must change the variables into the build script:
+
 - *bp.bat* for windows
 - *bp.sh* for *nix system.
 
@@ -91,5 +101,28 @@ RestSeed
 
 .. warning::
 
-   Is strongly recommended to remove the ``SeedDatabase.dll`` to avoid any attempts to create a new administrator.
+   Is strongly recommended to remove the ``SeedDatabase.dll`` to avoid any attempt to create a new administrator.
    This can happen if you change the information in the configuration file and restart the application.
+
+SignIn, LockoutUser, ValidateUser, PasswordStrategy, ConfigureApplicationCookie
+-------------------------------------------------------------------------------
+
+These settings are used by |netCoreIdentity_link|.
+
+Logging
+-------
+
+This is the standard .NET Core *Logging* configuration.
+
+Serilog
+-------
+
+This is the |serilog_link| nuGet package configuration. This allows to log to a file.
+
+.. |serilog_link| raw:: html
+
+   <a href="https://serilog.net/" target="_blank">Serilog</a>
+
+.. |netCoreIdentity_link| raw:: html
+
+   <a href="https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity" target="_blank">ASP.NET Core Identity</a>
