@@ -10,7 +10,9 @@ Read `ExtCore documentation <http://docs.extcore.net/en/latest/>`_ to learn abou
 Base's common interface
 =======================
 In your extension main project, a class should implement the ``Infrastructure.IExtensionMetadata`` interface,
-so that the application knows what the extension provides in matter of display (menu items)...
+so that the application knows what the extension provides in matter of display (menu items...).
+
+We usually name it ``ExtensionMetadata``.
 
 Menu groups and menu items
 --------------------------

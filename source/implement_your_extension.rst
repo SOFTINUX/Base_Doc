@@ -30,9 +30,7 @@ Go to solution folder and type:
 
 Write your code
 ===============
-| In your new project, create a class that implements ``Infrastructure.IExtensionMetadata``.
-| You may also implement ``Infrastructure.IExtensionDatabaseMetadata``.
-
-Your extension will depend on Infrastructure.
+| In your new project, add a reference to Base's ``Infrastructure`` and also ``Security.Common``.
+| Then create a ``ExtensionMetadata``  class that implements ``Infrastructure.IExtensionMetadata``.
 
 Have a look at :doc:`write your extensions </extension_structure>`, feel free to open issues for questions.
