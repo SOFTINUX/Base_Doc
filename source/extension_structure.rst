@@ -7,6 +7,32 @@ ExtCore concepts
 ================
 Read `ExtCore documentation <http://docs.extcore.net/en/latest/>`_ to learn about extensions and how they are structured into several projects.
 
+Embedded resources
+==================
+
+In your .csproj, you'll find this:
+
+.. code-block:: xml
+
+  <ItemGroup>
+    <EmbeddedResource Include="Styles\**;Scripts\**\*.min.js;Views\**" />
+  </ItemGroup>
+
+So that your embedded styles, scripts and views are embedded.
+
+You'll also find complementary stuff like this, to be sure that any file used in your project but provided by another project
+is correctly built as an embedded resource only:
+
+.. code-block:: xml
+
+  <ItemGroup>
+    <None Remove="Views\SomeView.cshtml" />
+    <None Remove="... path_to_some_file_of_other_project.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="... path_to_some_file_of_other_project.js" />
+  </ItemGroup>
+
 Base's common interface
 =======================
 In your extension main project, a class should implement the ``Infrastructure.IExtensionMetadata`` interface,
@@ -62,6 +88,6 @@ Permissions, Scopes and Claims
 | Then provide the permission level (see ``Security.Common.Enums.Permission enumeration``) and scope (extension assembly short name without the version and culture stuff).
 
 | A custom claim of type Permission will be created for every scope, its value being the highest permission level.
-| For example, if the :guilabel:`Write` and :guilabel:`Read` checkboxes are checked for a given scope in administration page, the highest granted permission level is "Write" and the claim will have "Write" value.
+| For example, if the :guilabel:`Write` and :guilabel:`Read` checkboxes are checked for a given scope in administration page, the highest granted permission level is :guilabel:`Write` and the claim will have :guilabel:`Write` value.
 
 You will be able to use it to filter menu items too (work in progress, issue `#9 <https://github.com/SOFTINUX/Base/issues/9>`_).
