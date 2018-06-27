@@ -14,7 +14,7 @@ Using command-line (easy and cross-platform):
 
 .. code-block:: bash
 
-   $ dotnet new classlib -o <you_new_project>
+   $ dotnet new classlib -o <your_new_project>
 
 Add project reference to the solution
 =====================================
@@ -22,7 +22,7 @@ Go to solution folder and type:
 
 .. code-block:: bash
 
-   $ dotnet add reference <path_to_your_new_project>
+   $ dotnet sln add reference <path_to_your_new_project_csproj>
 
 Write your code
 ===============
