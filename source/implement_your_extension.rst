@@ -14,7 +14,11 @@ Using command-line (easy and cross-platform):
 
 .. code-block:: bash
 
-   $ dotnet new classlib -o <your_new_project>
+   $ dotnet new classlib -o <your_new_project> -f netcoreapp2.1
+
+Assuming Base's ``Infrastructure`` framework version is 2.1. Check its .csproj file.
+
+If you don't specify framework version, it will default to ``netstandardxxx``, which is not what we expect.
 
 Add project reference to the solution
 =====================================
