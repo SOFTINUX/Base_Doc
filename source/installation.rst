@@ -76,6 +76,7 @@ Add the administrator user
 
 | With Postman (or the program of your choice) make a POST request to this url: http://localhost:5000/dev/seed/CreateUser
 | By command line:
+
 - curl: ``curl -i -X POST -H 'Content-Type: application/json' http://localhost:5000/dev/seed/CreateUser -d {}``
 - powershell: ``Invoke-WebRequest -Uri http://localhost:5000/dev/seed/CreateUser -Method POST``
 
