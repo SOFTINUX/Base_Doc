@@ -5,7 +5,7 @@ Configure Rider
 
    This page is for Rider 2018.2 and upper.
 
-| Rider doesn't use all .sln tag to build your application.
+| Rider doesn't use all ``.sln`` tag to build your application.
 | In this page, we show to configure Rider to build bundles before build the application.
 
 Create an external tool
