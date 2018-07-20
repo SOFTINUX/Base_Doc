@@ -5,4 +5,5 @@ How To
    :name: toc-howto
 
    howto_log
+   configure_rider
 

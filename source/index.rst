@@ -37,7 +37,7 @@
    :caption: How To
 
    howto/index
-   
+
 .. toctree::
    :hidden:
    :maxdepth: 2
