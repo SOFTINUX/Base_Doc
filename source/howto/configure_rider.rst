@@ -43,7 +43,7 @@ Now, in external tool configuration window:
 Create an file watcher for javascript minification
 ==================================================
 
-In this example, we use Uflifyjs. You can install with nodejs by ``npm install uflify-js -g``.
+In this example, we use Uglifyjs. You can install with nodejs by ``npm install uglify-js -g``.
 
 | Goto Settings (:kbd:`Ctrl` + :kbd:`Alt` + :kbd:`S`), section Tools -> File Watchers
 
