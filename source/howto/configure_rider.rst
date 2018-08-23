@@ -45,10 +45,6 @@ Create an file watcher for javascript minification
 
 In this example, we use Uflifyjs. You can install with nodejs by ``npm install uflify-js -g``.
 
-.. note::
-
-   At the time of writing this page, we use Rider 2018.2 EAP
-
 | Goto Settings (:kbd:`Ctrl` + :kbd:`Alt` + :kbd:`S`), section Tools -> File Watchers
 
 .. image:: ../_static/images/rider_watcher1.png
