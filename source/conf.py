@@ -28,6 +28,8 @@ version = ''
 # The full version, including alpha/beta/rc tags
 release = 'Latest'
 
+def setup(app):
+    app.add_stylesheet('css/custom.css')
 
 # -- General configuration ---------------------------------------------------
 

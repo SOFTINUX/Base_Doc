@@ -39,3 +39,29 @@ Now, in external tool configuration window:
 5. click on save.
 
 .. image:: ../_static/images/screen5.png
+
+Create an file watcher for javascript minification
+==================================================
+
+In this example, we use Uflifyjs. You can install with nodejs by ``npm install uflify-js -g``.
+
+.. note::
+
+   At the time of writing this page, we use Rider 2018.2 EAP
+
+| Goto Settings (:kbd:`Ctrl` + :kbd:`Alt` + :kbd:`S`), section Tools -> File Watchers
+
+.. image:: ../_static/images/rider_watcher1.png
+
+| In right of window, click on + sign (or :kbd:`Ctrl` + :kbd:`n`) to add a new file watcher.
+| Select Uglify in list and give a name to your new file watcher.
+
+In Edit Watcher window, click on three dot of Scope field.
+
+.. image:: ../_static/images/rider_watcher3.png
+
+In Scope window, select your javascript file and click to add.
+
+.. image:: ../_static/images/rider_watcher5.png
+
+Finish by clicking on Ok. Close all settings windows.
