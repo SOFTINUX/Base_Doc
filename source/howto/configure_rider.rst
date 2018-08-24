@@ -33,12 +33,21 @@ In new window click on plus sign:
 Now, in external tool configuration window:
 
 1. enter a name for your new external tool configuration.
-2. in program field, enter same text as screen shot.
+2. in program field, enter same text as screen shot. Help yourself with macros.
 3. in arguments field enter bundles.
 4. working directory is auto completed.
 5. click on save.
 
 .. image:: ../_static/images/screen5.png
+
+Once you've configured this external tool, copy it and create the two other ones:
+
+.. image:: ../_static/images/screen6.png
+
+Change argument field to ``copyexts`` for the second external tool and ``copydeps`` for the third external tool.
+Be sure you have the external tools and the project build tasks in this order:
+
+.. image:: ../_static/images/screen7.png
 
 Create an file watcher for javascript minification
 ==================================================

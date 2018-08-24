@@ -69,7 +69,8 @@ Note about Rider 2017.3
 -----------------------
 
 | Rider 2017.3 cannot execute the PostBuildEvent declared into WebApplication.csproj
-| You need to execute ``./bp.sh copyexts`` and ``./bp.sh copydeps`` after build the solution or project.
+| You need to execute ``./bp.sh copyexts`` and ``./bp.sh copydeps`` after building the solution or project.
+| Have a look after :doc:`Rider useful configuration section </howto/configure_rider>`.
 
 Add the administrator user
 ==========================
