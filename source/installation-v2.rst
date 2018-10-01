@@ -1,0 +1,69 @@
+Installation: version 2
+***********************
+
+Create the host webapp
+======================
+
+Create your solution folder. Create a ``src`` folder. In this folder, create an empty .NET Core webapp:
+
+.. code-block:: bash
+
+   $ dotnet new web -o SoftinuxBaseSample.WebApplication -f netcoreapp2.1
+
+Go up in the root folder (above ``src``) and create the solution file:
+
+.. code-block:: bash
+
+   $ dotnet new sln
+
+Add the webapp to the solution:
+
+.. code-block:: bash
+
+   $ dotnet sln add src/SoftinuxBaseSample.WebApplication/SoftinuxBaseSample.WebApplication.csproj
+
+Go to the SoftinuxBaseSample.WebApplication directory, create an "Extensions" folder with a ".gitkeep" empty file
+and adjust your .gitignore:
+
+``# App Extensions
+src/SoftinuxBaseSample.WebApplication/Extensions/*
+!src/SoftinuxBasSample.WebApplication/Extensions/.gitkeep``
+
+
+Add the nuget packages
+======================
+
+For now we're testing locally generated and stored nuget packages.
+Check "include prerelease" in nuget package manager if using Visual Studio.
+
+Install these packages and the rest will follow (normally... but not now):
+
+SoftinuxBase.Barebone
+SoftinuxBase.Security
+SoftinuxBase.WebApplication (to be created for "UseSoftinuxBase"/"AddSoftinuxBase" like ExtCore)
+...
+ExtCore.Data.EntityFramework (should be a dependency)
+ExtCore.Mvc
+ExtCore.WebApplication
+
+
+
+TODO which packages to install
+
+Temporarily
+===========
+
+Add your ApplicationStorageContext class that defines all the EF Core DbSets of your whole application.
+
+
+Add SoftinuxBase to your Startup.csproj
+=======================================
+
+TODO once refactoring has been done, this should be a few lines.
+
+Add the extension project
+=========================
+
+Link to Implement Your Extension
+
+

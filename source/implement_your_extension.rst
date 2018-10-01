@@ -26,7 +26,7 @@ Go to solution folder and type:
 
 .. code-block:: bash
 
-   $ dotnet sln add reference <path_to_your_new_project_csproj>
+   $ dotnet sln add <path_to_your_new_project_csproj>
 
 Write your code
 ===============
