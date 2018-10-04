@@ -29,6 +29,23 @@ and adjust your .gitignore:
 src/SoftinuxBaseSample.WebApplication/Extensions/*
 !src/SoftinuxBasSample.WebApplication/Extensions/.gitkeep``
 
+Edit your webapp's Program.cs, it should look like:
+
+.. code-block:: csharp
+        public class Program
+    {
+        public static void Main(string[] args)
+        {
+            CreateWebHostBuilder(args).Build().Run();
+        }
+
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args_) =>
+            WebHost.CreateDefaultBuilder(args_)
+                .UseStartup<Startup>()
+                // Add the two lines below for SoftinuxBase
+                .UseWebRoot(Path.Combine(Directory.GetCurrentDirectory(), "..", "wwwroot"))
+                .CaptureStartupErrors(true);
+    }
 
 Add the nuget packages
 ======================
