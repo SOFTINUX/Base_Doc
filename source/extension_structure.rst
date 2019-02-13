@@ -33,6 +33,20 @@ is correctly built as an embedded resource only:
     <EmbeddedResource Include="... path_to_some_file_of_other_project.js" />
   </ItemGroup>
 
+Bundling
+========
+Bundling is a convenient way to save bandwith and processor time when dealing with .css files etc.
+This is not specific to our project but we share our preferred way of doing this,
+so you would do the same in your extension project:
+
+We use a `bundleconfig.json` file in concerned projects and the .csproj contains something like this:
+
+.. code-block:: xml
+
+  <DotNetCliToolReference Include="BundlerMinifier.Core" Version="2.8.391" />
+
+As a side note, embedded resources are bundled first.
+
 Base's common interface
 =======================
 In your extension main project, a class should implement the ``Infrastructure.IExtensionMetadata`` interface,

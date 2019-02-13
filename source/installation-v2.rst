@@ -32,7 +32,7 @@ src/SoftinuxBaseSample.WebApplication/Extensions/*
 Edit your webapp's Program.cs, it should look like:
 
 .. code-block:: csharp
-        public class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
