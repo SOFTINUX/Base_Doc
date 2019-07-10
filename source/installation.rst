@@ -75,11 +75,11 @@ Note about Rider 2017.3
 Add the administrator user
 ==========================
 
-| With Postman (or the program of your choice) make a POST request to this url: http://localhost:5000/dev/seed/CreateUser
+| With Postman (or the program of your choice) make a POST request to this url: http://localhost:5000/dev/seed/create-user
 | By command line:
 
-- curl: ``curl -i -X POST -H 'Content-Type: application/json' http://localhost:5000/dev/seed/CreateUser -d {}``
-- powershell: ``Invoke-WebRequest -Uri http://localhost:5000/dev/seed/CreateUser -Method POST``
+- curl: ``curl -i -X POST -H 'Content-Type: application/json' http://localhost:5000/dev/seed/create-user -d {}``
+- powershell: ``Invoke-WebRequest -Uri http://localhost:5000/dev/seed/create-user -Method POST``
 
 This will create the administrator user with general permissions.
 
@@ -90,7 +90,7 @@ This will create the administrator user with general permissions.
 Login with demo user
 ====================
 
-| user: johndoe@softinux.com
+| user: johndoe\@softinux.com or johndoe
 | password: 123_Password
 | (password is case sensitive)
 
