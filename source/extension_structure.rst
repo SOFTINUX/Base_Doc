@@ -59,6 +59,49 @@ Menu groups and menu items
 | Menu groups are ordered by position then alphabetically.
 | They're not displayed if they contain no menu items. The first occurrence of a menu group defines the associated icon. Menu items (of a menu group) are ordered by position.
 
+General useful properties
+-------------------------
+
+``Base.Infrastructure.IExtensionMetadata`` and ``ExtCore.Infrastructure.IExtensionMetadata`` interfaces will require implementation of some properties.
+We recommend using the following code, using `assembly attributes <https://docs.microsoft.com/en-us/dotnet/core/tools/csproj#assemblyinfo-properties>`_.
+
+.. code-block:: c#
+
+    /// <summary>
+    /// Gets the current assembly object.
+    /// </summary>
+    public Assembly CurrentAssembly => Assembly.GetExecutingAssembly();
+
+    /// <summary>
+    /// Gets the full path with assembly name.
+    /// </summary>
+    public string CurrentAssemblyPath => CurrentAssembly.Location;
+
+    /// <summary>
+    /// Gets the name of the extension.
+    /// </summary>
+    public string Name => CurrentAssembly.GetName().Name;
+
+    /// <summary>
+    /// Gets the URL of the extension.
+    /// </summary>
+    public string Url => Attribute.GetCustomAttribute(CurrentAssembly, typeof(AssemblyTitleAttribute)).ToString();
+
+    /// <summary>
+    /// Gets the version of the extension.
+    /// </summary>
+    public string Version => Attribute.GetCustomAttribute(CurrentAssembly, typeof(AssemblyVersionAttribute)).ToString();
+
+    /// <summary>
+    /// Gets the authors of the extension (separated by commas).
+    /// </summary>
+    public string Authors => Attribute.GetCustomAttribute(CurrentAssembly, typeof(AssemblyCompanyAttribute)).ToString();
+
+    /// <summary>
+    /// Gets the description of the extension (separated by commas).
+    /// </summary>
+    public string Description => Attribute.GetCustomAttribute(CurrentAssembly, typeof(AssemblyDescriptionAttribute)).ToString();
+
 MVC structure
 =============
 
