@@ -1,47 +1,8 @@
-Using Base as dependency
-************************
-
-Configure a new project with Visual Studio 2017/2019
-====================================================
-
-Create new solution with classlib project targeted in NET. Core 2.2.
-
-.. image:: ../_static/images/SampleExtensionConfig1.png
-   :alt: sample extension configuration application tab
-
-Add reference to Base and ExtCore (ExtCore is dependecy of Base)
-
-.. image:: ../_static/images/SampleExtensiondeps1.png
-   :alt: dependencies of sample application
-
-Configure pre-build scripts
----------------------------
-Before build, you need to copy all Base dependencies to `$(SolutionDir)$(OutDir)` folder:
-
-.. image:: ../_static/images/SampleExtensionPreBuild.png
-   :alt: pre build tab configuration
-
-Configure post-build scripts
-----------------------------
-After build, you need to copy your extension into base extension folder:
-
-.. image:: ../_static/images/SampleExtensionPostBuild.png
-   :alt: post build tab configuration
-
-Configure debug tab
--------------------
-Must important, configure debugging.
-You extension as a partial app and it's not directly executed. Here how to configure your application to make possibility of debugging.
-
-.. image:: ../_static/images/SampleExtensionDebugTabApp.png
-   :alt: debug tab configuration
-
-Now, you can debbug you extension into Visual Studio.
-
 With commande line and visaul Studio Code
-====================================================
+*****************************************
 
-Create a new project:
+Create a new project
+--------------------
 
 .. code-block:: bash
 

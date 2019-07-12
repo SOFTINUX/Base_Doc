@@ -1,30 +1,25 @@
+Base Documentation
+==================
+
 .. include:: intro.rst
 
 .. toctree::
-   :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Installation
+   :name: sec-installation
 
    installation
    configuration
 
 .. toctree::
-   :hidden:
-   :maxdepth: 2
-   :caption: Your Extensions
+   :maxdepth: 1
+   :caption: Extensions
 
+   extension_structure
    implement_your_extension/index
 
 .. toctree::
-   :hidden:
-   :maxdepth: 2
-   :caption: Extension Structure
-
-   extension_structure
-
-.. toctree::
-   :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Misc
 
    about_ef
@@ -32,15 +27,14 @@
    testunit/unit_testing
 
 .. toctree::
-   :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: How To
 
-   howto/index
+   howto/howto_log
+   howto/configure_rider
 
 .. toctree::
-   :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: FAQ
 
-   faq/index
+   faq/linux
