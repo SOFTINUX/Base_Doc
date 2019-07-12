@@ -1,6 +1,11 @@
 {
     "python.pythonPath": "C:\\Python\\python.exe",
-    "restructuredtext.confPath": "${workspaceRoot}\\source",
+    "restructuredtext.confPath": "${workspaceFolder}\\source",
     "restructuredtext.sphinxBuildPath": "\"C:\\Program Files\\Python36\\python.exe\" -m sphinx",
-    "restructuredtext.builtDocumentationPath": "${workspaceRoot}/build/html"
+    "restructuredtext.builtDocumentationPath": "${workspaceRoot}/build/html",
+    "restructuredtext.linter.extraArgs": [
+        "--ignore D001",
+        "--ignore D002",
+        "--ignore D004",
+    ]
 }
