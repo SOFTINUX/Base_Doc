@@ -8,7 +8,7 @@ Create your solution folder. Create a ``src`` folder. In this folder, create an 
 
 .. code-block:: bash
 
-   $ dotnet new web -o SoftinuxBaseSample.WebApplication -f netcoreapp2.1
+   $ dotnet new web -o SoftinuxBaseSample.WebApplication -f netcoreapp2.2
 
 Go up in the root folder (above ``src``) and create the solution file:
 

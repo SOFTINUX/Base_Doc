@@ -13,7 +13,7 @@
    :maxdepth: 2
    :caption: Your Extensions
 
-   implement_your_extension
+   implement_your_extension/index
 
 .. toctree::
    :hidden:
