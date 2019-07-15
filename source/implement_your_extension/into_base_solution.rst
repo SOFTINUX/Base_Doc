@@ -1,5 +1,7 @@
-New Extension into Base solution
+New Extension with Base source
 ********************************
+
+Use Base solution and add your extension code into it.
 
 Add a new project
 =================

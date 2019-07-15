@@ -1,4 +1,4 @@
-With commande line and visaul Studio Code
+With commande line and Visual Studio Code
 *****************************************
 
 Create a new project
