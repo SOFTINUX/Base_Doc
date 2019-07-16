@@ -52,7 +52,7 @@ ConnectionStrings
 | In this section, you can configure your database connection.
 | The file come with commented examples of connections strings.
 
-.. code-block:: json
+.. code-block:: js
 
   "ConnectionStrings": {
       // Please use '/' for directory separator
@@ -70,7 +70,7 @@ Corporate
 
 Here you can set you Company name and logo.
 
-.. code-block:: json
+.. code-block:: js
 
   "Corporate": {
     "Name": "SOFTINUX",
@@ -87,7 +87,7 @@ RestSeed
 | Here is the **SECRET** configuration for create first user.
 | The first user is the application administrator.
 
-.. code-block:: json
+.. code-block:: js
 
   "RestSeed": {
     "UserName": "",

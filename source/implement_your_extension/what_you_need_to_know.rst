@@ -7,3 +7,7 @@ What you need to know
 
 You can use `Visual Studio 2017 <https://www.visualstudio.com/fr/downloads/>`_, `Visual Studio Code <https://code.visualstudio.com/>`_ or `JetBrains Rider <https://www.jetbrains.com/rider/>`_ to make your own extension.
 If you decide to use Visual Studio, **be aware that projects are not compatible with Visual Studio 2015**.
+
+In this section, we talking of SampleApi. This project is availiable on Github to :
+
+.. todo:: add git repos for sample app

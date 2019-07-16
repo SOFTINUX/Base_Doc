@@ -38,3 +38,8 @@ Base Documentation
    :caption: FAQ
 
    faq/linux
+
+.. toctree::
+   :maxdepth: 1
+
+   todo

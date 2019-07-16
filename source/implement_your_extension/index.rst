@@ -3,6 +3,7 @@ Create your extensions
 
 .. include:: what_you_need_to_know.rst
    :start-line: 3
+   :end-line: 9
 
 .. toctree::
    :maxdepth: 2
