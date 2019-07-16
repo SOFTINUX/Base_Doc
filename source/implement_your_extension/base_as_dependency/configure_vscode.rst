@@ -4,7 +4,7 @@ Visual Studio Code Configuration
 Tasks.json
 ^^^^^^^^^^
 | Add lines 26 to 29 and 38 to 40.
-| Modify line 35 to use :code:`WebApplication.dll` as bootstrap entry point of application.
+| Modify line 35 to use :code:`WebApplication.dll` as entry point of application.
 
 .. note::
    The order sequence make build on every launch.
