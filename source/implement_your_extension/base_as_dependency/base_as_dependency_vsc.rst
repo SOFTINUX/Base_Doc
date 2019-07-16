@@ -10,7 +10,7 @@ Create a new project
 
 Open your new csproj file and **adapt it with highlighted lines** as is example:
 
-.. literalinclude:: ../../_static/src/SampleApi.csproj
+.. literalinclude:: ../../_static/src/SampleApi.csproj.txt
     :language: xml
     :caption: SampleApi csproj file
     :linenos:
