@@ -8,7 +8,7 @@ Create a new project
 
    $ dotnet new classlib -o <your_new_project> -f netcoreapp2.2
 
-Open your new csproj file and **adapt it with highlighted lines** as is example:
+Open your new .csproj file and **adapt it with highlighted lines** as in example:
 
 .. literalinclude:: ../../_static/src/SampleApi.csproj.txt
     :language: xml
@@ -18,6 +18,6 @@ Open your new csproj file and **adapt it with highlighted lines** as is example:
 
 .. note ::
     | Path in `<HintPath>` are given as examples.
-    | Lines 36 to 38 set the value of the Visual Studio $ (SolutionDir) macro because dotnet doesn't use it.
+    | Lines 36 to 38 set the value of the Visual Studio `$(SolutionDir)` macro because `dotnet` doesn't use it.
 
 .. include:: configure_vscode.rst

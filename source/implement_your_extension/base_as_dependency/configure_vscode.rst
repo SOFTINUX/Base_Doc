@@ -7,7 +7,7 @@ Tasks.json
 | Modify line 35 to use :code:`WebApplication.dll` as entry point of application.
 
 .. note::
-   The order sequence make build on every launch.
+   The order sequence makes build on every launch.
 
 .. literalinclude:: ../../_static/src/tasks.json.txt
     :language: js

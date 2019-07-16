@@ -1,4 +1,4 @@
-What you need to know
+What there is to know
 **********************
 .. _extension_folder:
 .. warning::

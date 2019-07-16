@@ -31,7 +31,7 @@ Check if your new project is targeted on framework .NET Core 2.2.
 Add references
 --------------
 
-Add references to the Base two dlls and ExtCore nuGet packages (ExtCore is a dependency of Base).
+Add references to the Base and ExtCore (ExtCore is a dependency of Base).
 
 .. figure:: ../../_static/images/SampleExtensionDeps1.png
    :alt: dependencies of sample application
@@ -53,10 +53,10 @@ After building, you need to copy your extension into Base's extensions folder:
 Configure debug tab
 -------------------
 Most important, configure debugging.
-You extension behaves as a partial app and is not directly executed. Here is how to configure your application to enable possibility of debugging.
+Your extension is a partial app and is not directly executed. Here is how to configure your application to enable possibility of debugging.
 
 .. image:: ../../_static/images/SampleExtensionDebugTabApp.png
    :alt: debug tab configuration
 
-Now, you can debbug you extension into Visual Studio.
+Now, you can debug your extension into Visual Studio.
 

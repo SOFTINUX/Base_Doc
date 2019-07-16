@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Softinux Base Documentation'
-copyright = '2018 - SOFTINUX'
+copyright = '2018-2019 - SOFTINUX'
 author = 'Benjamin Nolmans, Barbara Post'
 
 # The short X.Y version
