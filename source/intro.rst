@@ -1,6 +1,9 @@
 SOFTINUX Base Documentation
 ***************************
 
+.. warning::
+   The documentation is not complete and therefore undergoes frequent changes.
+
 *SOFTINUX Base* is a free, open source and cross-platform based on |aspnetcore_link| and |extcore_link| framework.
 It runs on Windows, Mac and Linux.
 It is built using the best and the most modern tools and languages.

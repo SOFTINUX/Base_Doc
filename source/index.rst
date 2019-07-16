@@ -40,6 +40,6 @@ Base Documentation
    faq/linux
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 0
 
    todo
