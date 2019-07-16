@@ -3,6 +3,12 @@ Visual Studio Code Configuration
 
 Tasks.json
 ^^^^^^^^^^
+| Add lines 26 to 29 and 38 to 40.
+| Modify line 35 to use :code:`WebApplication.dll` as bootstrap entry point of application.
+
+.. note::
+   The order sequence make build on every launch.
+
 .. literalinclude:: ../../_static/src/tasks.json
     :language: js
     :caption: SampleApi Visual Studio Code tasks file
@@ -11,6 +17,9 @@ Tasks.json
 
 Launch.json
 ^^^^^^^^^^^
+| Modify line 13 to use :code:`WebApplication.dll` as the program to execute.
+| Modify line 15 to specify execution folder.
+
 .. literalinclude:: ../../_static/src/launch.json
     :language: js
     :caption: SampleApi Visual Studio Code launch file
